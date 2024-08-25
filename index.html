@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(145, 129, 7);
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-top: 50px;
+        }
+
+        .main-container{
+            border: 4px solid white;
+            padding: 10px;
+            display: flex;
+        }
+
+        
+        li {
+            list-style: none;
+            float: left;
+            margin: 20px;
+            color: white;
+            font-size: 30px;
+            transition: 0.5s;
+        }
+
+        li:hover{
+            color: rgb(44, 44, 3);
+            font-weight: bolder;
+        }
+
+        .home{
+            margin-left: 500px;
+        }
+        .logo{
+             
+            width: 85px;
+            height: 60px;
+            border: dotted 4px rgb(245, 245, 242);
+            background-color: rgb(46, 49, 2);
+            border-radius: 100px;
+            text-align: center;
+            padding-top: 20px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .dif-logo{
+            margin-left: 35px;
+            margin-top: 70px;
+            transition: 0.5s;
+        }
+        .dif-logo:hover{
+            opacity: 0.5;
+        }
+        p{
+            margin-top: 100px;
+            font-size: 20px;
+            margin-left: 500px;
+            color: rgb(46, 50, 3);
+        }
+     
+        .foot, li{
+            
+            color: rgb(231, 229, 204);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        .last_logo{
+            margin-left: 350px;
+        }
+    </style>
+    <div class="main-container">
+    <div class="logo">CHAMP'S<br>PLACE</div>
+    <nav class="nav">
+    <ul>
+        <li class="home">Home</li>
+        <li>Contact Us</li>
+        <li>Service</li>
+    </ul>
+    </nav>
+    
+</div>
+<div class="dif-logo"><img src="toyota.png" width="1000px" height="auto"></div>
+<p>Bring your deals!</p>
+<div>
+    <ul class="foot">
+        <li>CocaCola</li><li>:Indorama</li><li>:Chevron</li><li>:Niger Delta</li>
+        <li>:Baker Hughes</li><li>:Schlumberger</li><li class="last_logo">:Exterran</li><li>:Point</li>
+    </ul>
+</div>
+<script>
+    let getName = prompt("Enter your name",'name')
+    
+    function getNameInfo(){
+    if(getName.toUpperCase() ==="PRINCE OBOT"){
+        alert('VERIFIED')
+    }
+    else{
+        alert('FAILED VERIFICATION')
+    }
+}
+    getNameInfo()
+
+    let getPassword = prompt("Enter your password")
+    function getPasswordInfo(){
+        if(getPassword === '123456'){
+            alert("COMPLETE VERIFICATION")
+        }
+        else{
+            alert('INCOMPLETE VERIFICATION')
+        }
+    }
+    getPasswordInfo()
+    
+</script>
+</body>
+</html>
